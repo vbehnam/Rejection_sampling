@@ -1,9 +1,24 @@
 # Rejection_sampling
 
-This is a MATLAB implementation of the very useful rejection sampling method. I will apply this algorithm to three different functions, each with their own file.
+This is a MATLAB implementation of the very useful rejection sampling method. I will apply this algorithm to two different functions, each with their own file.
 
-Rejection sampling is used when sampling from a certain distribution is difficult or time-consuming (call this distribution f(x)). 
+## A bit of math
 
-Another similar and "enveloping" function that we know how to sample from is chosen (call this g(x)). It is important that g(x) is strictly larger than f(x) for all x.
+Rejection sampling is used when sampling from a certain distribution is difficult or time-consuming (call this distribution g(x)). 
 
-Then, we draw samples from g(x). For each sample, we check if it is within the boundaries of f(x). If so, keep this sample. If not, discard it. And repeat for the desired number of samples.
+Another similar and "enveloping" function that we know how to sample from is chosen (call this f(x)). It is important that f(x) is strictly larger than g(x) for all x.
+
+Then, we draw samples from f(x). For each sample, we check if it is within the boundaries of g(x). If so, keep this sample. If not, discard it. And repeat for the desired number of samples.
+
+For algorithmic efficiency, the enveloping function f(x) should not be too much larger than g(x). Otherwise, there will be too many discarded samples.
+
+## Crazy sine function
+
+The first function we are trying to sample from is crazy-sine-function: g(x) =
+
+The way I approached this was to draw a perimeter around g(x). We sample both the x and y-coordinates uniformly from within this perimeter. I keep those samples that are also within g(x).
+
+I then plot the histogram and the function g together in the png file crazy-sine-function. and we can see that the histogram mimicks the crazy sine function! 
+
+## exponential function
+
