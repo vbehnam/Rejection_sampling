@@ -2,7 +2,7 @@
 
 This is a MATLAB implementation of the very useful rejection sampling method. I will apply this algorithm to three different functions, each with their own file.
 
-Rejection sampling is used when sampling from a certain distribution (call this f(x)) is difficult or time-consuming. 
+Rejection sampling is used when sampling from a certain distribution is difficult or time-consuming (call this distribution f(x)). 
 
 Another similar and "enveloping" function that we know how to sample from is chosen (call this g(x)). It is important that g(x) is strictly larger than f(x) for all x.
 
