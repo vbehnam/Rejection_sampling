@@ -1,3 +1,10 @@
+% the original function
+function result = calculateFunction(x) 
+
+    result = ((sin(x)).^2).*abs(x.^3+(2*x)-3);
+    
+end
+
 % Draw 10^5 samples of X ~ Unif(-1, 1)
 X = -1 + (1+1)*rand(1, 10^5);
 
@@ -54,10 +61,3 @@ hist(Accepted, 15);
 hold on
 plot(z,f)
 hold off;
-
-% the original function
-function result = calculateFunction(x) 
-
-    result = ((sin(x)).^2).*abs(x.^3+(2*x)-3);
-    
-end
