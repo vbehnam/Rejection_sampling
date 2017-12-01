@@ -14,7 +14,7 @@ For algorithmic efficiency, the enveloping function f(x) should not be too much 
 
 ## Crazy Sine Function
 
-The first function we are trying to sample from is crazy-sine-function: g(x) =
+The first function we are trying to sample from is crazy-sine-function: g(x) = (sin(x))^2)*abs((x^3)+(2*x)-3)
 
 The way I approached this was to draw a perimeter around g(x). We sample both the x and y-coordinates uniformly from within this perimeter. I keep those samples that are also within g(x).
 
