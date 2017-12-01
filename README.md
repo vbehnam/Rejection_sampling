@@ -22,6 +22,6 @@ I then plot the histogram and the function g together in the png file crazy-sine
 
 ## Exponential Function
 
-We are trying to sample from this function: g(x,y)
+We are trying to sample from this function: g(x,y) = (x*(exp(x*y)))/3.67
 
 This is quite similar to the last problem, except now the function takes in two parameters, rather than one. Therefore, the histogram needs to be replaced with the scatterplot. The scatterplot of the sample vectors are in the png file exponential-function-result.
