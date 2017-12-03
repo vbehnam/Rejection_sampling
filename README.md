@@ -18,7 +18,7 @@ The first function we are trying to sample from is crazy-sine-function: g(x) = (
 
 The way I approached this was to draw a perimeter around g(x). We sample both the x and y-coordinates uniformly from within this perimeter. I keep those samples that are also within g(x).
 
-I then plot the histogram and the function g together in the png file crazy-sine-function-result. and we can see that the histogram mimicks the crazy sine function! 
+I then plot the histogram and the function g together in the png file crazy-sine-function-result, and we can see that the histogram mimicks the crazy sine function! 
 
 ## Exponential Function
 
