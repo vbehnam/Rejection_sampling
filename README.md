@@ -1,6 +1,6 @@
 # Rejection Sampling
 
-This is a MATLAB implementation of the very useful rejection sampling method. I will apply this algorithm to two different functions, each with their own file.
+This is a MATLAB implementation of the rejection sampling method. I will apply this algorithm to two different functions, each with their own file.
 
 ## A Bit of Math
 
